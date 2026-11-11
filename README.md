@@ -20,7 +20,7 @@ Create a **Web Service** from this repo and use these settings in the form:
 | Branch | `main` |
 | Region | Frankfurt (EU Central) |
 | Root Directory | leave empty |
-| Build Command | `true` (nothing to build; `npm install` also works) |
+| Build Command | `yarn install` (Render's Node default, works fine) or `true`; nothing to build, `npm install` also works |
 | Start Command | `node server.js` (or `npm start`) |
 | Instance type | Free is fine (it spins down when idle, first request after that is slow) |
 | Health Check Path (under Advanced) | `/healthz` |
