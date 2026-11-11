@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: kilianbartsch
+    runtime: node
+    plan: free
+    buildCommand: "true"
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: SITE_PASSWORD
+        sync: false # you type it in the Render dashboard
+      - key: COOKIE_SECRET
+        generateValue: true
